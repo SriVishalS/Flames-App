@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>FLAMES CALCUALTOR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="row i d-flex justify-content-center align-items-center">
+
+        <div class="col-md-6">
+            <div class="main">
+                <h1 class="top">FLAMES Calculator </h1>
+            </div>
+            <form name=first>
+                <div class=" " id='maindiv'>
+                    <div class='group'>
+
+                        <p class="def">Enter the names: </p>
+                        <input value='' name=name onkeyup=check(this) type=text class='txt' id='yname'>
+                        <input value='' name=name1 onkeyup=check(this) type=text class='txt' id='pname'>
+
+
+                        <div name=n1 id=nam1>Click the button to know the relationship status:</div>
+                        <div id='display_flame'></div>
+
+
+                    </div>
+
+
+                    <div class='but_por'>
+                        <button name=calculate type="button" onclick=calc()
+                            class="btn btn-secondary btn-lg">FLAMES</button>
+                        <button type=reset onclick='clear_all()' class="btn btn-secondary btn-lg">Reset</button>
+                        <span align='center' id="dumdiv">
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <div id='result' class='clearfix'>
+                    <div class='group' align='center'>
+                        <div class='love_result'>
+                            <span name=n1 id=nam1></span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='flames.js'></script>
+
+</body>
+
+</html>

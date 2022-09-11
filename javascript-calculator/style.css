@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;
+    height: 100vh;
+}
+
+header {
+    background-color: #333;
+    padding: 40px 0;
+}
+
+header h1 {
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right bottom, #fff, #777);
+    color: transparent;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+}
+
+main #container {
+    background-color: #333;
+    box-shadow: 0 5px 5px #111;
+    padding: 20px;
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+#container .row:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+#container input,
+#container button {
+    float: left;
+}
+
+#container input:focus,
+#container button:focus {
+    outline: none;
+}
+
+#container input {
+    background-color: #222;
+    border: 1px solid #999;
+    border-right-width: 0;
+    color: #999;
+    font-size: 22px;
+    font-weight: 300;
+    height: 80px;
+    padding-right: 14px;
+    text-align: right;
+    width: 261px;
+}
+
+#container button {
+    background-color: #222;
+    border: none;
+    box-shadow: 0 3px 0 #111;
+    color: #999;
+    font-size: 20px;
+    height: 80px;
+    margin-right: 7px;
+    width: 80px;
+}
+
+#container button:active {
+    box-shadow: 0 2px 0 #111;
+    transform: translateY(1px);
+}
+
+#container #clear,
+#container .operator,
+#container #equals {
+    color: #111;
+}
+
+#container #clear,
+#container .operator {
+    margin-right: 0;
+}
+
+#container #clear {
+    background-color: #e95a4b;
+    border: 1px solid #999;
+    border-left-width: 0;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#container #clear:active {
+    box-shadow: none;
+    transform: none;
+}
+
+#container .operator {
+    background-color: #999;
+    box-shadow: 0 3px 0 #555;
+}
+
+#container .operator:active {
+    box-shadow: 0 2px 0 #555;
+}
+
+#container #equals {
+    background-color: #2ecc71;
+    box-shadow: 0 3px 0 #155d34;
+}
+
+#container #equals:active {
+    box-shadow: 0 2px 0 #155d34;
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        padding: 28px 0;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+
+    main {
+        padding: 40px 0;
+    }
+
+    main #container {
+        padding: 16px;
+    }
+
+    #container .row:not(:last-child) {
+        margin-bottom: 7px;
+    }
+
+    #container input {
+        font-size: 18px;
+        height: 60px;
+        padding-right: 10px;
+        width: 195px;
+    }
+
+    #container button {
+        font-size: 16px;
+        height: 60px;
+        margin-right: 5px;
+        width: 60px;
+    }
+}
